@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Reputy</title>
 </head>
+<!-- Task 1 -->
 
 <body>
     <nav>
-        <img src="assets/logo.png" alt="reputy">
-        <!-- nav menu -->
+        <div class="logo">
+            <img src="assets/reputy.png" alt="">
+        </div>
+        <!-- Task 1.2 -->
         <div class="nav-container">
             <ul>
                 <li class="nav-item">Join Firesides</li>
@@ -21,7 +24,7 @@
             </ul>
             <div class="nav-registration">
                 <button class="login btn">Log in</button>
-                <button class="register btn-primary">Create account</button>
+                <button class="btn-primary">Create account</button>
             </div>
         </div>
     </nav>
@@ -39,6 +42,7 @@
                 </h1>
                 <h2> Create your <br> free talent wallet</h2>
                 <form>
+                    <p id="error-message">Invalid Email! Please Try Again</p>
                     <div class="input-wrapper">
                         <input type="text" name="display-name" id="display-name" required>
                         <span class="floating-label">Display Name</span>
@@ -49,15 +53,24 @@
                         <span class="floating-label">Email Address</span>
                         <button type="button"><span> &#10799;</span></button>
                     </div>
+                    <!-- Task 1.2 -->
                     <button type="submit" class="btn-primary"><img src="assets/Icon.png" alt=""> Sign up with
                         email</button>
                 </form>
                 <div>
+                    <!-- Task 1.2 -->
                     <p>Already have an account? Log in</p>
                 </div>
             </div>
         </div>
     </main>
+    <div class="thanks-container">
+        <div class="thanks-message">
+            <img src="assets/sent.png" alt="">
+            <p id="thanks-message">
+            </p>
+        </div>
+    </div>
 </body>
 <script src="index.js"></script>
 
