@@ -1,0 +1,66 @@
+.sign-up form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sign-up form>button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Space Grotesk;
+    gap: 1rem;
+    font-size: 1.125rem;
+}
+
+
+/* Task 1.3 */
+
+/* media query */
+
+/* small laptop screen */
+@media screen and (max-width:1400px) {
+    .sign-up h1 {
+        font-size: 2.5rem;
+    }
+
+    .sign-up h2 {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Task 1.4 */
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+    .sign-up {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .sign-up h1 {
+        display: none;
+    }
+
+    .sign-up h2 {
+        display: none;
+    }
+
+    .sign-up>div {
+        display: none;
+    }
+
+    .sign-up form>button[type=submit] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Space Grotesk;
+        gap: 1rem;
+        padding: 0.25rem 1rem;
+    }
+
+}

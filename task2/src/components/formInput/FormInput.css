@@ -1,0 +1,41 @@
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'open sans';
+    outline: transparent;
+    border: 1px solid var(--black);
+}
+
+.input-wrapper input:focus {
+    font-size: 0.7rem;
+    border: 1px solid rgb(0, 192, 180);
+}
+
+.input-wrapper .floating-label {
+    position: absolute;
+    font-family: 'open sans';
+    pointer-events: none;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    font-size: 1.125rem;
+}
+
+.input-wrapper input:focus~.floating-label,
+.input-wrapper input:not(:focus):valid~.floating-label {
+    transform: translateY(-90%);
+    font-size: 10px;
+    opacity: 0.4;
+    padding-bottom: 5px;
+}
+
+.invalid{
+    animation: shake 0.2s ease-in-out 0s 2;
+}

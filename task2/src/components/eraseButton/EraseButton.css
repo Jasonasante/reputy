@@ -1,0 +1,31 @@
+.input-wrapper button {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: max-content;
+    aspect-ratio: 1/1;
+    right: 0.5rem;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    border-color: transparent;
+}
+
+.input-wrapper button:hover {
+    background-color: rgba(0, 0, 0, 0.717);
+}
+
+.input-wrapper button:active {
+    background-color: var(--black);
+}
+
+.input-wrapper input:focus~button,
+.input-wrapper input:not(:focus):valid~button {
+    display: flex;
+}

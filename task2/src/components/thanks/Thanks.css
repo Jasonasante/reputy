@@ -1,0 +1,69 @@
+.thanks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-message {
+    width: 50%;
+    height: 50%;
+    background-color: var(--white);
+    border-radius: 3rem;
+    font-family: Space Grotesk;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.thanks-message p {
+    line-height: 2rem;
+}
+
+/* Task 1.3 */
+
+/* media query */
+
+/* small laptop screen */
+@media screen and (max-width:1400px) {
+    .sign-up h1 {
+        font-size: 2.5rem;
+    }
+
+    .sign-up h2 {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Task 1.4 */
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+    
+    .thanks-message {
+        width: 90%;
+        height: 50%;
+        font-size: 1rem;
+    }
+
+    .thanks-message img{
+        max-width: 30%;
+    }
+    
+    .thanks-message p {
+        line-height: 2rem;
+    }
+}

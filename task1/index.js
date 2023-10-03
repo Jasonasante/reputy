@@ -23,7 +23,6 @@ form.onsubmit = (evt) => {
         errorMessage.innerHTML = "Invalid Email! Please Try Again"
         errorMessage.style.visibility = 'visible'
         setTimeout(() => {
-            // errorMessage.innerHTML = ""
             errorMessage.style.visibility = 'hidden'
         }, 5000)
     } else {
@@ -32,9 +31,9 @@ form.onsubmit = (evt) => {
         thanksContainer.style.display = 'flex'
         thanksMessage.innerHTML = `Thanks for signing up, ${values["display-name"]}! <br>
             Your Magic Link has been sent to your email`
-        // setTimeout(() => {
-        //     thanksMessage.innerHTML = ""
-        //     thanksContainer.style.display = 'none'
-        // }, 5000)
+        setTimeout(() => {
+            thanksMessage.innerHTML = ""
+            thanksContainer.style.display = 'none'
+        }, 5000)
     }
 }
